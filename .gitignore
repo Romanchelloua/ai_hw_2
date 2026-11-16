@@ -1,0 +1,31 @@
+# Ignore everything by default
+*
+
+# Allow directories so git can traverse the folder tree
+!*/
+
+# Unignore gitignore itself
+!.gitignore
+
+# Unignore specific Jupyter notebooks
+!hw_2.ipynb
+!*hw_2.ipynb
+!best_pipeline.ipynb
+!*best_pipeline.ipynb
+!experiment.ipynb
+!*experiment.ipynb
+!experiments.ipynb
+!*experiments.ipynb
+
+# Explicitly re-ignore checkpoints, data, weights, and caches
+.ipynb_checkpoints/
+*.pth
+*.pt
+*.onnx
+*.engine
+data/
+datasets/
+outputs/
+wandb/
+__pycache__/
+.DS_Store
